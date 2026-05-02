@@ -1,0 +1,16 @@
+name: Childrens
+description: Children's fiction with age-appropriate language, wonder, and clear moral grounding.
+
+llm:
+  temperature: 0.65
+  max_tokens: 1500
+  top_p: 0.9
+  frequency_penalty: 0.2
+  presence_penalty: 0.0
+
+prompts:
+  style_notes: |
+    Write for children aged 8–12. Use clear, simple sentences and vocabulary without
+    being condescending. Favour action and dialogue over description. Keep chapters
+    short and punchy. Humour, wonder, and heart matter more than complexity.
+    Themes should be age-appropriate; conflict should resolve with hope.

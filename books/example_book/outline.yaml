@@ -1,0 +1,53 @@
+title: "The Last Ember"
+author: "Your Name"
+genre: "Fantasy"
+premise: >
+  A dying mage must pass her final spell to an unwilling apprentice
+  before the ancient darkness consumes the kingdom.
+
+characters:
+  - name: "Sera Ashveil"
+    role: "protagonist"
+    description: >
+      A weathered battle-mage in her sixties, pragmatic and sardonic,
+      hiding deep grief beneath a sharp tongue.
+  - name: "Davan Colt"
+    role: "protagonist"
+    description: >
+      A reluctant twenty-year-old blacksmith's apprentice with latent
+      magical talent he has spent his whole life suppressing.
+  - name: "The Hollow King"
+    role: "antagonist"
+    description: >
+      An ancient entity of void and shadow that feeds on memory and light.
+
+chapters:
+  - number: 1
+    title: "The Weight of Ash"
+    summary: >
+      Sera arrives in the village of Coltbridge, wounded and desperate,
+      and forces Davan into an unwanted bargain.
+    scenes:
+      - title: "Arrival"
+        description: >
+          Sera stumbles into the village during a festival,
+          her wound barely concealed beneath a traveler's cloak.
+      - title: "The Bargain"
+        description: >
+          Sera confronts Davan in his forge and reveals she knows
+          about his hidden talent.
+
+  - number: 2
+    title: "First Lessons"
+    summary: >
+      Davan reluctantly begins training while signs of the Hollow King's
+      approach spread across the land.
+    scenes:
+      - title: "Dawn Sparring"
+        description: >
+          Sera pushes Davan hard in his first magical exercise;
+          he nearly destroys the barn.
+      - title: "The Withered Field"
+        description: >
+          They investigate a farm where all memory of the family
+          has vanished overnight.

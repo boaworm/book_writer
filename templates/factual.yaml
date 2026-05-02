@@ -1,0 +1,16 @@
+name: Factual
+description: Non-fiction and factual writing with precision, clarity, and structured argument.
+
+llm:
+  temperature: 0.40
+  max_tokens: 2500
+  top_p: 0.85
+  frequency_penalty: 0.0
+  presence_penalty: 0.0
+
+prompts:
+  style_notes: |
+    Write accurate, well-structured non-fiction. Prioritise clarity and precision over
+    flair. Use concrete examples to illustrate abstract points. Arguments should be
+    logical and evidence-grounded. Avoid speculation unless clearly flagged. Maintain
+    an authoritative but readable tone — accessible to a general educated audience.

@@ -1,0 +1,15 @@
+name: Fantasy
+description: Epic fantasy with rich world-building, magic systems, and mythic stakes.
+
+llm:
+  temperature: 0.85
+  max_tokens: 4000
+  top_p: 0.95
+  frequency_penalty: 0.1
+  presence_penalty: 0.1
+
+prompts:
+  style_notes: |
+    Write epic fantasy prose: vivid world-building, internally consistent magic systems,
+    and a sense of mythic weight. Use elevated but accessible language. Ground the
+    fantastical in physical and emotional detail. Characters should feel the cost of power.

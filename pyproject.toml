@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "book-writer"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain",
+    "langchain-core",
+    "langchain-openai",
+    "langchain-text-splitters",
+    "python-dotenv",
+    "pydantic",
+    "pyyaml",
+    "rich",
+    "markdown",
+    "weasyprint",
+]
+
+[project.scripts]
+book-writer = "main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]

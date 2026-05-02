@@ -1,0 +1,202 @@
+title: The Long Watch
+author: Henrik
+genre: Fantasy
+premise: |-
+  In the years before the War of the Ring, the Dúnedain rangers keep silent vigil
+  on the borders of the Shire, unseen and unthanked. When young ranger Aldric is
+  posted alone to the south-western marches by order of Aragorn, he must hold a
+  growing darkness at bay — and learn why a people who will never know his name
+  are worth dying to protect.
+characters:
+  - name: Aldric
+    role: protagonist
+    description: |-
+      A young Dúnedain ranger in his mid-twenties, on his first extended solo
+      posting. Capable with sword and bow but still testing the edge of his
+      courage. He struggles with the anonymity of the watch — the longing to
+      be known, to matter — and must find meaning in a duty that demands
+      invisibility.
+  - name: Aragorn
+    role: mentor
+    description: |-
+      The Chieftain of the Dúnedain, wandering under the name Strider. Appears
+      briefly at the outset to assign the watch and again by letter at the close.
+      Speaks little but carries the weight of a purpose larger than any one man.
+      His orders are not explained — only given, and trusted.
+  - name: Caron
+    role: supporting
+    description: |-
+      A veteran Dúnedain ranger in his fifties, weathered and dry-humoured.
+      Assigned alongside Aldric for the first weeks before being gravely wounded.
+      In his convalescence he becomes the voice of the watch's deeper meaning —
+      a teacher who can only teach by being broken.
+  - name: Mira Goodbarrel
+    role: supporting
+    description: |-
+      A sharp-eyed Hobbit farmer's wife from Tookland whose southern fields sit
+      hard against the Shire's border. She does not know what watches over her
+      land, but she feels it — and leaves an unspoken offering on the fence post
+      each harvest. The human (or Hobbit) face of what the rangers protect.
+  - name: Gorthak
+    role: antagonist
+    description: |-
+      An Orc warchief of uncommon patience, leading a company of scouts westward
+      on behalf of a master whose name he does not share. Not savage but
+      calculating — he probes the Shire's borders with method, looking for the
+      gap in whatever watch he senses but cannot see.
+chapters:
+  - number: 1
+    title: The Chieftain's Word
+    summary: |-
+      At the ruins of Weathertop, Aragorn assembles a handful of rangers and
+      assigns the watches for the coming year. Aldric is sent alone to the
+      south-western marches of the Shire. He is given no reason — only the
+      order, a hand on the shoulder, and the road south.
+    scenes:
+      - title: The Gathering
+        description: |-
+          Rangers arrive at Weathertop by ones and twos at dusk. Aragorn speaks
+          briefly about the state of the wilds — orc movements east of the
+          Misty Mountains, rumours from the south. The tone is matter-of-fact,
+          the stakes underneath it enormous.
+      - title: The Assignment
+        description: |-
+          Aragorn pairs the rangers for their postings. When Aldric's name is
+          called he expects a partner. He is told he will go alone to the
+          Greenway's southern reach. He does not question it, but the walk
+          down from Weathertop in the dark is a long one.
+  - number: 2
+    title: The Green Borders
+    summary: |-
+      Aldric reaches the south-western Shire and begins his patrol. He meets
+      Caron, already established in a hidden camp in the weather hills. Together
+      they walk the border for the first weeks. Aldric observes the Shire from
+      a distance — its warmth and smallness — and discovers tracks that belong
+      to nothing that should be here.
+    scenes:
+      - title: The Hidden Camp
+        description: |-
+          Caron's camp is invisible from twenty paces — a ranger's home.
+          He greets Aldric with tea and minimal ceremony. He has been on the
+          watch for three months and his eyes are the eyes of a man who has
+          learned to read the land like a slow book.
+      - title: What the Shire Looks Like from Outside
+        description: |-
+          On an evening patrol, Aldric and Caron climb a low hill and look
+          down into the Shire. Lamplight in windows. Smoke from chimneys.
+          Singing, faint on the wind. Caron says nothing. Aldric asks what
+          they are watching for. Caron says: everything.
+      - title: The Tracks
+        description: |-
+          A muddy stretch of the Greenway shows boot-prints too large and
+          too heavy for any Hobbit, and clawed at the toe. Orc scouts,
+          moving carefully. Caron assesses them in silence, then breaks camp
+          and moves south without explanation.
+  - number: 3
+    title: Smoke Before Dawn
+    summary: |-
+      A farmstead at the Shire's southern edge is targeted by a scouting party.
+      Aldric and Caron intercept them in the dark before any Hobbit wakes.
+      The skirmish is brief and violent. Caron is wounded badly. The farm
+      lights a morning pipe, unaware.
+    scenes:
+      - title: The Watch Through the Night
+        description: |-
+          Aldric and Caron lie hidden in the long grass at the field's edge
+          through a cold, still night. Aldric watches Mira Goodbarrel's
+          farmhouse — a single candle burning late. He thinks about what she
+          might be doing. Worrying about the harvest. Unaware.
+      - title: The Skirmish
+        description: |-
+          Four Orc scouts break from the tree-line toward the farm. Aldric
+          and Caron take them in the field — arrows first, then blades.
+          It is fast and ugly. No heroics. Caron takes a wound to his side
+          that Aldric does not understand the seriousness of until after.
+      - title: Aftermath
+        description: |-
+          They carry the bodies into the trees and cover all sign of the
+          fight. Dawn breaks. A Hobbit child runs across the field to feed
+          chickens, humming. Caron leans on Aldric and does not complain
+          about his side.
+  - number: 4
+    title: What the Halflings Cannot Know
+    summary: |-
+      Aldric tends Caron's wound over several days at a deep camp in the
+      Weather Hills. As fever comes and goes, Caron talks — about the Shire,
+      about Isildur's heir, about why the watch must be kept in secret. Aldric
+      begins to understand the gift that invisibility actually is.
+    scenes:
+      - title: The Fever
+        description: |-
+          Caron's wound is infected. Aldric does what he was taught — cleans
+          it, packs it, boils water he doesn't have enough of. For two days
+          Caron is not coherent. Aldric runs the patrol alone and returns
+          to find him sleeping or muttering.
+      - title: The Lesson
+        description: |-
+          On the third night, Caron is lucid and quiet. He tells Aldric
+          what Aragorn told him years ago: that the Shire must never know
+          it is guarded. The moment it knows, it is changed. Fear comes in.
+          The innocence is the thing being protected — not just the people.
+      - title: Caron Leaves
+        description: |-
+          A ranger from the north arrives to help carry Caron to safety.
+          He and Aldric exchange a look. No comfort is offered. Caron
+          grips Aldric's arm before they take him away and says only:
+          hold the line.
+  - number: 5
+    title: The Warchief's Pass
+    summary: |-
+      Aldric discovers Gorthak's full company — fifteen orcs — moving on the
+      Shire through a narrow defile in the hills. Alone, with no time to
+      send word, he must hold them through the night using terrain, fire,
+      and everything Caron taught him. Dawn is the only reinforcement coming.
+    scenes:
+      - title: The Count
+        description: |-
+          Scouting ahead, Aldric finds the orc camp. He counts fires.
+          Fifteen, perhaps eighteen. He sits very still in the dark for a
+          long time, calculating. There is no one to tell. There is only
+          the pass and the night and whatever he does next.
+      - title: The Long Night
+        description: |-
+          Aldric uses the defile's geography — rockslides, fire, deception,
+          a hunter's patience — to hold the pass through the dark hours. He
+          is not a hero in this scene. He is a craftsman doing a terrible
+          job, piece by piece, through fear that does not go away but stops
+          mattering.
+      - title: Gorthak
+        description: |-
+          In the grey before dawn, Gorthak himself advances to see what
+          has held his company. He and Aldric face each other across the
+          stones. Gorthak is more intelligent than Aldric expected. The
+          fight is not the glorious kind. Aldric wins it by a small and
+          ugly margin.
+  - number: 6
+    title: Unseen
+    summary: |-
+      Morning. The Shire wakes as it always does. Aldric stands at the
+      border, exhausted and alone, watching smoke rise from Hobbit chimneys.
+      A courier arrives with a letter from Aragorn — new orders, brief praise,
+      the road continuing. Aldric looks back once at Mira Goodbarrel's farm
+      and walks on.
+    scenes:
+      - title: The Morning
+        description: |-
+          The Shire comes to life in the early sun — bells, the smell of
+          bread, a cart on the lane. None of it knows anything happened.
+          Aldric watches from the hillside, bleeding through his bandage,
+          and understands for the first time what Caron meant.
+      - title: Aragorn's Letter
+        description: |-
+          The courier is a boy of twelve, a Dúnedain runner who hands
+          over the sealed letter and waits. Aragorn's words are few:
+          commendation, the name of the next posting, and one line that
+          Aldric will carry for the rest of his life.
+      - title: The Fence Post
+        description: |-
+          Before he goes, Aldric passes Mira's farm. On the fence post
+          at the south field edge there is a small bundle — bread, wrapped
+          in cloth, left as it has been every week since he arrived. She
+          does not know who she leaves it for. He takes it, eats it on
+          the road, and does not look back.

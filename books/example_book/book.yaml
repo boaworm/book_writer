@@ -1,0 +1,24 @@
+category: fantasy
+
+# writing_style: "JRR Tolkien"
+# writing_style: "George RR Martin"
+
+# Known universe (LLM gets world context automatically):
+# universe: "Middle Earth"
+# universe: "Westeros"
+# universe: "Star Wars"
+# universe: "The Belgariad"
+# universe: "Medieval England"
+# universe: "Golden Age of Piracy"
+
+# Custom universe (you provide the description):
+# universe:
+#   name: "The Shattered Realm"
+#   description: "A world fractured into floating islands after a catastrophic magical war 300 years ago."
+
+# model: llama3
+# base_url: http://localhost:11434/v1
+
+# llm:
+#   temperature: 0.9
+#   max_tokens: 5000

@@ -1,0 +1,16 @@
+name: Novel
+description: Literary fiction with character depth, thematic resonance, and polished prose.
+
+llm:
+  temperature: 0.75
+  max_tokens: 3000
+  top_p: 0.95
+  frequency_penalty: 0.15
+  presence_penalty: 0.05
+
+prompts:
+  style_notes: |
+    Write literary fiction. Prioritise interiority, subtext, and thematic depth.
+    Show rather than tell. Use varied sentence rhythm — short punches alongside
+    longer, more reflective passages. Dialogue should reveal character, not just
+    advance plot. Leave space for ambiguity; trust the reader.

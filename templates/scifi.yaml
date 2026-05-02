@@ -1,0 +1,17 @@
+name: SciFi
+description: Science fiction balancing scientific plausibility with speculative imagination and human drama.
+
+llm:
+  temperature: 0.80
+  max_tokens: 3500
+  top_p: 0.95
+  frequency_penalty: 0.1
+  presence_penalty: 0.1
+
+prompts:
+  style_notes: |
+    Write science fiction grounded in scientific plausibility. Extrapolate logically
+    from real or near-future technology — make the speculative feel inevitable in
+    hindsight. Balance technical detail with human stakes; the science should serve
+    character and theme, not overwhelm them. Avoid technobabble: if a concept needs
+    explaining, weave it naturally into action or dialogue.
