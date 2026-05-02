@@ -8,3 +8,4 @@ books/*/output/
 books/*/versions/
 tmp/
 *.bak
+private_books/
