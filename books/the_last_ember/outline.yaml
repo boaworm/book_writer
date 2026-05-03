@@ -1,0 +1,265 @@
+title: "The Last Ember"
+author: "Henrik Thorburn"
+genre: "Fantasy"
+premise: >
+  A dying battle-mage must pass her final and most dangerous spell to an
+  unwilling young blacksmith before the ancient darkness that has hunted
+  her for twenty years consumes the kingdom. The spell is not merely power —
+  it is memory, grief, and everything she has left. To receive it, Davan
+  must become someone he has spent his whole life refusing to be.
+
+characters:
+  - name: "Sera Ashveil"
+    type: Main
+    role: "protagonist"
+    description: >
+      A battle-mage in her mid-sixties, lean and weathered, with burn scars
+      on her left forearm she never explains. Pragmatic to the point of
+      cruelty, sardonic in all circumstances, and ferociously competent —
+      or she was, before the wound. She hides her dying behind sharpness and
+      forward momentum. Twenty years ago she wounded the Hollow King and
+      bought the world a generation of safety; now the debt is coming due.
+      Her grief is old and well-managed and completely unresolved. She does
+      not ask for help. She arranges things so help is not required.
+
+  - name: "Davan Colt"
+    type: Main
+    role: "protagonist"
+    description: >
+      Twenty years old, broad-shouldered from the forge, with his father's
+      blunt hands and his mother's quick temper. He has known since boyhood
+      that something in him runs too hot — he does not let himself feel
+      deeply because when he does, things break. He has arranged his life
+      around the forge: predictable, physical, honest. He distrusts anything
+      he cannot hold or strike. He is not cowardly. He is terrified of what
+      he might do if he stops being careful.
+
+  - name: "The Hollow King"
+    type: Central
+    role: "antagonist"
+    description: >
+      Once a king of men who bargained with the void for immortality and
+      became emptiness itself. He does not kill — he consumes memory,
+      leaving people alive but gutted of everything that made them who
+      they were. His approach is felt before it is seen: colours drain
+      slightly, birds fall silent, the old forget names. He is not savage.
+      He is patient, enormous, and entirely without malice — which is what
+      makes him monstrous. He has been hunting Sera for twenty years,
+      slowly, the way a glacier moves. He is very nearly here.
+
+  - name: "Aldous Colt"
+    type: Central
+    role: "Davan's father"
+    description: >
+      Master blacksmith of Coltbridge, fifty-two, still strong, with a
+      careful man's distrust of magic and a father's instinctive terror at
+      watching his son be chosen for something large. He is not stupid and
+      not cruel — he simply believes in the world he can see and work with
+      his hands, and he has raised Davan to believe the same. His fear of
+      losing Davan is indistinguishable from his love for him. He will do
+      the wrong thing for the right reasons and know it, eventually.
+
+chapters:
+  - number: 1
+    title: "The Weight of Ash"
+    summary: >
+      Sera arrives in Coltbridge during a harvest festival, wounded and
+      running out of time. She has been watching Davan for weeks. She forces
+      him into a bargain he does not understand, and he accepts it for
+      reasons that have nothing to do with the kingdom and everything to do
+      with what he has been trying not to know about himself.
+    scenes:
+      - title: "Arrival"
+        description: >
+          Sera stumbles into the village square during the festival, her
+          wound barely concealed beneath a traveller's cloak. She is
+          matter-of-fact about her own state in a way that frightens people
+          more than panic would. She asks for the blacksmith's apprentice
+          by name. Nobody asks how she knows it.
+      - title: "The Bargain"
+        description: >
+          Sera finds Davan in his father's forge after the square clears.
+          She tells him what he is. He denies it. She demonstrates. The
+          forge fire responds to him in a way it has no right to, and he
+          cannot pretend otherwise. She offers him a choice that is not
+          really a choice.
+      - title: "The Price"
+        description: >
+          That night, alone, Davan watches Sera collapse against the inn
+          wall and recover before she thinks he has seen it. He realises
+          she is not just wounded — she is dying, and whatever she intends
+          to give him, she is running out of time to do it. He has already
+          said yes. He does not know yet what yes means.
+
+  - number: 2
+    title: "First Lessons"
+    summary: >
+      Training begins at dawn and does not go well. Davan's power is
+      enormous and almost entirely without form — like trying to teach
+      someone to forge who has only ever used the hammer to destroy. Aldous
+      finds them on the second day, and his confrontation with Sera tells
+      Davan more about his father's fear than twenty years of living with
+      him did.
+    scenes:
+      - title: "Dawn Sparring"
+        description: >
+          Sera pushes Davan through his first exercises in the field behind
+          the inn. He nearly destroys the barn. She is unsurprised and
+          unimpressed. Her teaching method is attrition: she will not stop
+          until he learns to be small and precise. He thinks she is being
+          cruel. She is being accurate.
+      - title: "The Withered Field"
+        description: >
+          They investigate a farm two miles east where all memory of the
+          family has vanished overnight — not the family themselves, who
+          stand in their yard unharmed, but every trace of who they were
+          to each other. The father holds his daughter and does not know
+          her face. Davan understands, for the first time, what they are
+          actually up against.
+      - title: "Aldous"
+        description: >
+          Aldous arrives having tracked Davan from the village. He and Sera
+          face each other in the farmyard with a specific fury — two people
+          who understand each other completely and want entirely different
+          things. Aldous demands Sera leave his son alone. Sera tells him
+          what happens to the kingdom if she does. Davan watches his
+          father's face and sees something he has never seen there before.
+
+  - number: 3
+    title: "What the Darkness Eats"
+    summary: >
+      Sera leads Davan to a town that was reached three nights ago. It is
+      intact and inhabited and completely hollow. She has been here before —
+      not this town, but others like it. This is where she stops performing
+      competence and tells him the truth: the Hollow King has been hunting
+      her specifically for twenty years, and the spell she carries is the
+      only weapon that was ever able to wound him.
+    scenes:
+      - title: "The Hollow Town"
+        description: >
+          The town of Verrath stands undamaged. The people go about their
+          days — cooking, trading, tending animals. None of them remember
+          the people they love. They are not distressed. They do not know
+          enough to be distressed. That is the worst part. Davan speaks to
+          a man who cannot recall his own wife's name, and the man smiles
+          pleasantly while he tries.
+      - title: "What Was Left"
+        description: >
+          Sera walks Davan through the town showing him what remains and
+          what does not. Habit survives. Craft survives. Language survives.
+          Everything personal is gone. She has seen this enough times to
+          inventory it. That she can still be moved by it, beneath the
+          inventory, is the thing she does not let him see.
+      - title: "Sera's Confession"
+        description: >
+          That night at the town's edge, Sera tells Davan what she has not
+          told him: twenty years ago, she drove her spell into the Hollow
+          King deep enough to slow him. She did not destroy him. She bought
+          time. Now the wound has healed and he has come for her. The spell
+          she carries — her last spell, the one she is dying to hold — is
+          the only thing that has ever hurt him. She needs Davan to take it
+          and finish what she started.
+
+  - number: 4
+    title: "The Forge of Will"
+    summary: >
+      The training changes. Davan stops fighting his power and starts
+      learning to shape it — the same instinct as the forge, Sera tells
+      him: not force but edge, not heat but direction. Then Sera shows him
+      something she has never shown anyone, and Aldous arrives for the
+      last time, and Davan makes the choice that cannot be unmade.
+    scenes:
+      - title: "Breaking Point"
+        description: >
+          Davan's power finally ignites in full during a training session
+          and nearly kills Sera. In the aftermath, his blacksmith's
+          instincts take over. He understands heat, pressure, the direction
+          of force. Sera sees it happen — the moment he stops fighting his
+          power and starts working with it — and says nothing, because
+          nothing needs to be said.
+      - title: "Ember and Void"
+        description: >
+          Sera shows Davan her older scars and tells him what she lost to
+          the Hollow King the night she wounded him: not her memories but
+          the colour of them. She remembers everything, but it is all grey
+          now. She tells him because he needs to know what the spell is
+          made of. Grief is the fuel. She has been burning it for twenty
+          years.
+      - title: "The Father's Road"
+        description: >
+          Aldous comes one last time with Davan's things from the forge —
+          a peace offering and a plea. He asks Davan to come home. He does
+          not pretend the world is not ending; he says the world has always
+          been ending and people still live in it. Davan loves his father
+          completely and does not go with him. Aldous leaves without
+          looking back, which is how Davan knows he is not really gone.
+
+  - number: 5
+    title: "The Last Night"
+    summary: >
+      The Hollow King's advance wraiths reach them. Sera holds them off
+      at a cost that leaves her visibly diminished. That night she attempts
+      the transfer. It takes — but not cleanly, not all of it — and Davan
+      wakes with something alive in his chest that is not his and is not
+      entirely hers anymore either. Sera is still there, but something
+      essential in her is already becoming past tense.
+    scenes:
+      - title: "The King's Edge"
+        description: >
+          The wraiths come at dusk — the Hollow King's scouts, fast and
+          memory-cold. Sera and Davan fight together for the first time.
+          Davan is terrified and effective. Sera destroys most of them
+          alone but the effort costs her something visible: her left hand
+          shakes afterward and does not stop.
+      - title: "The Transfer"
+        description: >
+          After midnight, in the ruins of a waystation, Sera passes the
+          spell. It is not a ritual — it is more like surgery, or like
+          passing a live coal from one pair of hands to another without
+          dropping it. It takes, mostly. What she cannot push across in
+          time she lets go of. She does not tell Davan what she let go of.
+      - title: "What He Carries"
+        description: >
+          Davan wakes with the spell settled in him like a second
+          heartbeat. He can feel it is made of grief — specific, personal,
+          decades old. He can feel the shape of a loss he was not there
+          for. Sera in the grey pre-dawn is quieter than she has ever been,
+          as though she has set down something she carried so long she
+          forgot it was heavy.
+
+  - number: 6
+    title: "The Last Ember"
+    summary: >
+      The Hollow King arrives. Davan faces him in the valley below the
+      waystation while Sera, diminished, holds the way behind him. The
+      confrontation is not glorious. It is a craftsman's work: precise,
+      costly, and done in the dark. The world does not witness it. The
+      world simply continues, which was the point.
+    scenes:
+      - title: "The King's Ground"
+        description: >
+          The Hollow King fills the valley the way a tide fills a basin —
+          not rushing, not dramatic, simply arriving. He is vast and quiet
+          and utterly certain. Davan descends to meet him with the spell
+          burning in his chest and his father's hands and twenty years of
+          Sera's grief as the only weapon that has ever mattered. He is
+          very frightened. He does not stop walking.
+      - title: "The Bargain Refused"
+        description: >
+          The Hollow King does not attack first. He offers, as he always
+          offers: peace, emptiness, the end of the ache. Davan understands
+          the offer is genuine and refuses it. A blacksmith knows what
+          void is good for: it is the absence inside the mold, the space
+          that gives metal its shape. You do not fill yourself with
+          nothing. You use the nothing to define the edge. He drives the
+          spell home.
+      - title: "After the Dark"
+        description: >
+          The valley is quiet. The spell is spent. The Hollow King is not
+          destroyed — nothing that old is destroyed cleanly — but he is
+          bound and diminished, set back a generation at least. Sera is
+          alive, sitting in the grass when Davan climbs back up. She looks
+          at him with an expression he cannot read, which might be the
+          first honest thing he has seen on her face. They do not talk
+          much. The road back to Coltbridge is long, and the world does
+          not know their names, and that is exactly as it should be.

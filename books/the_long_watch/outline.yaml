@@ -1,5 +1,5 @@
 title: The Long Watch
-author: Henrik
+author: Henrik Thorburn
 genre: Fantasy
 premise: |-
   In the years before the War of the Ring, the Dúnedain rangers keep silent vigil
@@ -9,6 +9,7 @@ premise: |-
   are worth dying to protect.
 characters:
   - name: Aldric
+    type: Main
     role: protagonist
     description: |-
       A young Dúnedain ranger in his mid-twenties, on his first extended solo
@@ -17,6 +18,8 @@ characters:
       be known, to matter — and must find meaning in a duty that demands
       invisibility.
   - name: Aragorn
+    type: Central
+    alias: Strider
     role: mentor
     description: |-
       The Chieftain of the Dúnedain, wandering under the name Strider. Appears
@@ -24,6 +27,7 @@ characters:
       Speaks little but carries the weight of a purpose larger than any one man.
       His orders are not explained — only given, and trusted.
   - name: Caron
+    type: Central
     role: supporting
     description: |-
       A veteran Dúnedain ranger in his fifties, weathered and dry-humoured.
@@ -31,6 +35,7 @@ characters:
       In his convalescence he becomes the voice of the watch's deeper meaning —
       a teacher who can only teach by being broken.
   - name: Mira Goodbarrel
+    type: Central
     role: supporting
     description: |-
       A sharp-eyed Hobbit farmer's wife from Tookland whose southern fields sit
@@ -38,6 +43,7 @@ characters:
       land, but she feels it — and leaves an unspoken offering on the fence post
       each harvest. The human (or Hobbit) face of what the rangers protect.
   - name: Gorthak
+    type: Central
     role: antagonist
     description: |-
       An Orc warchief of uncommon patience, leading a company of scouts westward

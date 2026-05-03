@@ -1,4 +1,5 @@
 category: fantasy
+writing_style: "Ursula K. Le Guin"
 
 # writing_style: "JRR Tolkien"
 # writing_style: "George RR Martin"
@@ -19,6 +20,5 @@ category: fantasy
 # model: llama3
 # base_url: http://localhost:11434/v1
 
-# llm:
-#   temperature: 0.9
-#   max_tokens: 5000
+llm:
+  max_tokens: 5000

@@ -15,7 +15,9 @@ class Chapter(BaseModel):
 
 class Character(BaseModel):
     name: str
-    role: str
+    alias: str | None = None
+    type: str = "Central"   # Main | Central
+    role: str | None = None  # narrative role e.g. protagonist, antagonist
     description: str
 
 

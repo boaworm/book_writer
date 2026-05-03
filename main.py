@@ -1,6 +1,7 @@
 import argparse
 import os
 import sys
+import textwrap
 import time
 from pathlib import Path
 
@@ -79,9 +80,20 @@ def cmd_analyze(book_path: Path) -> None:
     template = resolved.template
     llm = resolved.llm
     book_llm = book_cfg.llm.model_dump(exclude_none=True)
+    model_display = book_cfg.model or os.getenv("MODEL_NAME", "gpt-4o")
+    from utils.llm_defaults import matched_model_key, resolve_llm_defaults
+    llm_defaults_key = matched_model_key(model_display)
+    _llm_defs_entry = resolve_llm_defaults(model_display, book_cfg.category) if llm_defaults_key else None
+    _llm_defs_fields = set(_llm_defs_entry.model_dump(exclude_none=True)) if _llm_defs_entry else set()
 
     def src(field: str) -> str:
-        return "[yellow]book override[/yellow]" if field in book_llm else "[dim]template[/dim]"
+        if field in book_llm:
+            default_val = getattr(resolved.base_llm, field)
+            suffix = f" [dim](default = {default_val})[/dim]" if default_val is not None else ""
+            return f"[yellow]book override[/yellow]{suffix}"
+        if field in _llm_defs_fields:
+            return "[cyan]llm defaults[/cyan]"
+        return "[dim]template[/dim]"
 
     total_scenes = sum(len(ch.scenes) for ch in outline.chapters)
 
@@ -98,11 +110,31 @@ def cmd_analyze(book_path: Path) -> None:
     story.add_row("Chapters", str(len(outline.chapters)))
     story.add_row("Scenes", str(total_scenes))
     story.add_row("Characters", str(len(outline.characters)))
+    book_md = book_path / "output" / "book.md"
+    if book_md.exists():
+        words = len(book_md.read_text().split())
+        pct = words / 90_000 * 100
+        story.add_row("Word count", f"{words:,}  [dim]({pct:.0f}% of a typical novel)[/dim]")
     console.print("\n[bold cyan]Story[/bold cyan]")
     console.print(story)
 
+    # Characters list
+    TYPE_STYLE = {"main": "bold yellow", "central": "cyan"}
+    console.print("\n[bold cyan]Characters[/bold cyan]")
+    for c in outline.characters:
+        type_lower = c.type.lower()
+        type_color = TYPE_STYLE.get(type_lower, "")
+        type_tag = f"[{type_color}][{c.type.upper()}][/{type_color}]"
+        alias_str = f"  [dim](alias: {c.alias})[/dim]" if c.alias else ""
+        role_str = f"  [dim]{c.role}[/dim]" if c.role else ""
+        console.print(f"  {type_tag}  [bold]{c.name}[/bold]{alias_str}{role_str}")
+        desc_flat = " ".join(c.description.split())
+        indent = "        "
+        wrapped = textwrap.fill(desc_flat, width=console.width - len(indent),
+                                initial_indent=indent, subsequent_indent=indent)
+        console.print(wrapped)
+
     # Config table
-    model_display = book_cfg.model or os.getenv("MODEL_NAME", "gpt-4o")
     base_url_display = book_cfg.base_url or os.getenv("OPENAI_BASE_URL", "openai")
     cfg_table = Table.grid(padding=(0, 2))
     cfg_table.add_column(style="bold")
@@ -113,6 +145,7 @@ def cmd_analyze(book_path: Path) -> None:
     universe_display = book_cfg.universe.name if book_cfg.universe else "[dim]none[/dim]"
     cfg_table.add_row("Universe", universe_display, "")
     cfg_table.add_row("Model", model_display, "")
+    cfg_table.add_row("LLM defaults", llm_defaults_key or "[dim]none[/dim]", "")
     cfg_table.add_row("Backend", base_url_display, "")
     console.print("\n[bold cyan]Configuration[/bold cyan]")
     console.print(cfg_table)
@@ -146,10 +179,53 @@ def cmd_analyze(book_path: Path) -> None:
     console.print()
 
 
+def _print_generation_stats(
+    outline,
+    chapter_words: list[tuple[int, str, int]],
+    total_elapsed: float,
+) -> None:
+    total_words = sum(w for _, _, w in chapter_words)
+    reference_words = 90_000  # ~300-page novel at 250 words/page
+    read_minutes = total_words / 250  # average adult reading speed
+
+    table = Table(title="Generation Statistics", show_header=True, header_style="bold cyan")
+    table.add_column("Ch", justify="right", style="dim")
+    table.add_column("Title")
+    table.add_column("Words", justify="right")
+
+    for num, title, words in chapter_words:
+        table.add_row(str(num), title, f"{words:,}")
+    table.add_section()
+    table.add_row("", "[bold]Total[/bold]", f"[bold]{total_words:,}[/bold]")
+
+    console.print()
+    console.print(table)
+
+    pct = total_words / reference_words * 100
+    read_h, read_m = divmod(int(read_minutes), 60)
+    elapsed_h, rem = divmod(int(total_elapsed), 3600)
+    elapsed_m, elapsed_s = divmod(rem, 60)
+
+    elapsed_str = (
+        f"{elapsed_h}h {elapsed_m}m {elapsed_s}s" if elapsed_h
+        else f"{elapsed_m}m {elapsed_s}s" if elapsed_m
+        else f"{elapsed_s}s"
+    )
+    read_str = f"{read_h}h {read_m}m" if read_h else f"{read_m}m"
+
+    grid = Table.grid(padding=(0, 2))
+    grid.add_column(style="bold")
+    grid.add_column()
+    grid.add_row("Generation time", elapsed_str)
+    grid.add_row("Word count", f"{total_words:,}  [dim]({pct:.0f}% of a typical 300-page novel)[/dim]")
+    grid.add_row("Reading time", f"~{read_str}  [dim](at 250 wpm)[/dim]")
+    console.print(grid)
+
+
 def cmd_generate(book_path: Path, model_override: str | None, base_url_override: str | None) -> None:
     try:
         outline = load_outline(book_path)
-        book_cfg, resolved = load_config(book_path)
+        book_cfg, resolved = load_config(book_path, model_override)
     except FileNotFoundError as e:
         console.print(f"[red]{e}[/red]")
         sys.exit(1)
@@ -176,7 +252,9 @@ def cmd_generate(book_path: Path, model_override: str | None, base_url_override:
     writing_style_note = resolve_writing_style(book_cfg.writing_style) if book_cfg.writing_style else ""
     universe_note = resolve_universe(book_cfg.universe) if book_cfg.universe else ""
     previous_summaries: list[str] = []
+    chapter_words: list[tuple[int, str, int]] = []
 
+    gen_start = time.time()
     total = len(outline.chapters)
     for i, chapter in enumerate(outline.chapters, 1):
         label = f"[{i}/{total}] Chapter {chapter.number}: {chapter.title}"
@@ -199,12 +277,14 @@ def cmd_generate(book_path: Path, model_override: str | None, base_url_override:
             elapsed = time.time() - t0
         console.print(f"  [green]✓[/green] {label} [dim]({elapsed:.0f}s)[/dim]")
         write_chapter(book_path, chapter.number, chapter.title, content)
+        chapter_words.append((chapter.number, chapter.title, len(content.split())))
         previous_summaries.append(
             f"Chapter {chapter.number} ({chapter.title}): {chapter.summary}"
         )
 
     book_file = stitch_book(book_path, outline)
     console.print(f"\n[green]Done![/green] Full book at: {book_file}")
+    _print_generation_stats(outline, chapter_words, time.time() - gen_start)
 
 
 def cmd_regenerate_chapter(
@@ -212,7 +292,7 @@ def cmd_regenerate_chapter(
 ) -> None:
     try:
         outline = load_outline(book_path)
-        book_cfg, resolved = load_config(book_path)
+        book_cfg, resolved = load_config(book_path, model_override)
     except FileNotFoundError as e:
         console.print(f"[red]{e}[/red]")
         sys.exit(1)
@@ -282,7 +362,7 @@ def cmd_critique(book_path: Path, model_override: str | None, base_url_override:
 
     try:
         outline = load_outline(book_path)
-        book_cfg, resolved = load_config(book_path)
+        book_cfg, resolved = load_config(book_path, model_override)
     except FileNotFoundError as e:
         console.print(f"[red]{e}[/red]")
         sys.exit(1)

@@ -1,0 +1,23 @@
+{
+  "qwen-henrik": {
+    "novel":     { "temperature": 1.20, "frequency_penalty": 0.85, "presence_penalty": 0.30, "top_p": 0.90, "top_k": 100, "min_p": 0.09 },
+    "fantasy":   { "temperature": 1.20, "frequency_penalty": 0.85, "presence_penalty": 0.30, "top_p": 0.90, "top_k": 100, "min_p": 0.09 },
+    "scifi":     { "temperature": 1.20, "frequency_penalty": 0.85, "presence_penalty": 0.30, "top_p": 0.90, "top_k": 100, "min_p": 0.09 },
+    "childrens": { "temperature": 1.20, "frequency_penalty": 0.85, "presence_penalty": 0.30, "top_p": 0.90, "top_k": 100, "min_p": 0.09 },
+    "factual":   { "temperature": 1.20, "frequency_penalty": 0.85, "presence_penalty": 0.30, "top_p": 0.90, "top_k": 100, "min_p": 0.09 }
+  },
+  "qwen3.5-122b": {
+    "novel":     { "temperature": 1.20, "frequency_penalty": 0.85, "presence_penalty": 0.30, "top_p": 0.90, "top_k": 100, "min_p": 0.09 },
+    "fantasy":   { "temperature": 1.20, "frequency_penalty": 0.85, "presence_penalty": 0.30, "top_p": 0.90, "top_k": 100, "min_p": 0.09 },
+    "scifi":     { "temperature": 1.20, "frequency_penalty": 0.85, "presence_penalty": 0.30, "top_p": 0.90, "top_k": 100, "min_p": 0.09 },
+    "childrens": { "temperature": 1.20, "frequency_penalty": 0.85, "presence_penalty": 0.30, "top_p": 0.90, "top_k": 100, "min_p": 0.09 },
+    "factual":   { "temperature": 1.20, "frequency_penalty": 0.85, "presence_penalty": 0.30, "top_p": 0.90, "top_k": 100, "min_p": 0.09 }
+  },
+  "gemma4-31b": {
+    "novel":     { "temperature": 0.75, "max_tokens": 3000, "frequency_penalty": 0.15, "presence_penalty": 0.05, "top_p": 0.95 },
+    "fantasy":   { "temperature": 0.85, "max_tokens": 4000, "frequency_penalty": 0.10, "presence_penalty": 0.10, "top_p": 0.95 },
+    "scifi":     { "temperature": 0.80, "max_tokens": 3500, "frequency_penalty": 0.10, "presence_penalty": 0.10, "top_p": 0.95 },
+    "childrens": { "temperature": 0.65, "max_tokens": 1500, "frequency_penalty": 0.20, "presence_penalty": 0.00, "top_p": 0.90 },
+    "factual":   { "temperature": 0.40, "max_tokens": 2500, "frequency_penalty": 0.00, "presence_penalty": 0.00, "top_p": 0.85 }
+  }
+}

@@ -1,0 +1,6 @@
+category: fantasy
+writing_style: "JRR Tolkien"
+universe: "Middle Earth"
+
+llm:
+  max_tokens: 5000

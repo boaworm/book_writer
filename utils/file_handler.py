@@ -39,9 +39,25 @@ def stitch_book(book_dir: Path, outline: StoryOutline) -> Path:
 
 
 def format_characters(characters: list[Character]) -> str:
-    return "\n".join(
-        f"- {c.name} ({c.role}): {c.description}" for c in characters
-    )
+    lines: list[str] = []
+    main = [c for c in characters if c.type.lower() == "main"]
+    central = [c for c in characters if c.type.lower() != "main"]
+
+    def _char_line(c: Character) -> str:
+        alias = f' (known as "{c.alias}")' if c.alias else ""
+        role = f" — {c.role}" if c.role else ""
+        return f"  {c.name}{alias}{role}: {c.description}"
+
+    if main:
+        lines.append("Main characters (the story revolves around these):")
+        lines.extend(_char_line(c) for c in main)
+    if central:
+        if main:
+            lines.append("")
+        lines.append("Central characters (significant recurring figures with backstory):")
+        lines.extend(_char_line(c) for c in central)
+
+    return "\n".join(lines)
 
 
 def format_scenes(scenes: list[Scene]) -> str:

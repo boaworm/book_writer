@@ -11,7 +11,8 @@ You are a skilled author writing in the {genre} genre.
 Book: {title}
 Premise: {premise}
 
-Characters:
+Characters (Main characters appear throughout and drive the story; Central characters \
+are significant figures who may appear or disappear but carry their own history and voice):
 {characters}
 
 {previous_context}\

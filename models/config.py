@@ -23,6 +23,7 @@ class CategoryTemplate(BaseModel):
 
 
 class ResolvedConfig(BaseModel):
-    llm: LLMConfig
+    llm: LLMConfig       # final: template → llm_defaults → book overrides
+    base_llm: LLMConfig  # before book.yaml overrides: template → llm_defaults
     prompts: PromptConfig
     template: CategoryTemplate
